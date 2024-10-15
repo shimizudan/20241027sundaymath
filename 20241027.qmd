@@ -18,8 +18,7 @@ format:
 # はじめに（自己紹介）
 
 
- ![](https://shimizudan.github.io/20241027sundaymath/001.jpeg)
-
+ ![](https://shimizudan.github.io/20241027sundaymath/001.jpeg){width=50%}
 
 {{< pagebreak >}}
 
