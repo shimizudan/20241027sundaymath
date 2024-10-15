@@ -167,9 +167,9 @@ end fps=10  # フレームレートを10 FPSに設定
 
 {{< pagebreak >}}
 
-# 動画鑑賞（約2分）
+# 動画鑑賞（1分41秒）
 
-- なんか人間の人生のようです。
+- 人生のようです。
 
  [https://youtu.be/5sJvXND0Y80](https://youtu.be/5sJvXND0Y80)
 
