@@ -11,7 +11,7 @@ format:
 
 本日の内容のサイトはこちらです。（QRコード）
 
-![](https://shimizudan.github.io/20241027sundaymath/QR.png)
+![](https://shimizudan.github.io/20241027sundaymath/QR.png){width=50%}
 
 {{< pagebreak >}}
 
@@ -74,9 +74,9 @@ plot(x, y, aspect_ratio=1, legend=false, xlabel="x", ylabel="y", title="Parametr
 # 他の人も同じように違っている。
 
 - @matheser さんのXのポスト
-- 私の作ったのと同じで，@algebraFact のようにならない。
+- 私の作ったのと同じで，@algebraFact さんのようにならない。
 
- ![](https://shimizudan.github.io/20241027sundaymath/003.png){width=70%}
+ ![](https://shimizudan.github.io/20241027sundaymath/003.png){width=50%}
 
 
   
@@ -104,7 +104,7 @@ plot(x, y, aspect_ratio=1, legend=false, xlabel="x", ylabel="y", title="Parametr
 
 # 211分割だった！
 
-- @algebraFact のポストはどのくらいの分割だったかというと211分割でした。
+- @algebraFact さんのXポストはどのくらいの分割だったかというと211分割でした。
 
 ```{julia}
 #| code-fold: true
@@ -159,10 +159,9 @@ end fps=10  # フレームレートを10 FPSに設定
 
 - 音源は Tinymemory さんの「秋はセンチメンタル」です。
 - iMovieで編集しました。
-- なんか人間の人生のようです。
   
 
- ![](https://shimizudan.github.io/20241027sundaymath/004.png)
+ ![](https://shimizudan.github.io/20241027sundaymath/004.png){width=70%}
 
 
 
@@ -170,6 +169,7 @@ end fps=10  # フレームレートを10 FPSに設定
 
 # 動画鑑賞（約2分）
 
+- なんか人間の人生のようです。
 
  [https://youtu.be/5sJvXND0Y80](https://youtu.be/5sJvXND0Y80)
 
