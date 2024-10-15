@@ -11,7 +11,7 @@ format:
 
 本日の内容のサイトはこちらです。（QRコード）
 
-![](https://shimizudan.github.io/20240629sundaymath/QR6237.png)
+![](https://shimizudan.github.io/20241027sundaymath/QR.png)
 
 {{< pagebreak >}}
 
@@ -26,10 +26,10 @@ format:
 
 # @algebraFact さんのXのポスト
 
+ - 綺麗だな。作ってみたいな。Julia言語で作ってみよう！
+
  ![](https://shimizudan.github.io/20241027sundaymath/002.png)
 
- - 綺麗だな。作ってみたいな。
- - Julia言語で作ってみよう！
 
 {{< pagebreak >}}
 
@@ -48,7 +48,9 @@ Juliaは統計処理や科学技術計算、機械学習に強いプログラミ
 
 {{< pagebreak >}}
 
-# Julia言語で作ってみたが。。。
+# Julia言語で作ってみたが．．．
+
+- なんか違う．．．
 
 ```{julia}
 #| code-fold: true
@@ -67,19 +69,21 @@ plot(x, y, aspect_ratio=1, legend=false, xlabel="x", ylabel="y", title="Parametr
 
 ```
 
-- なんか違う。。。
+
 
 {{< pagebreak >}}
 
 # 他の人も同じように違っている。
 
 - @matheser さんのXのポスト
+- 私の作ったのと同じで，@algebraFact のようにならない。
 
  ![](https://shimizudan.github.io/20241027sundaymath/003.png)
 
-- 私の作ったのと同じで，@algebraFact のようにならない。
-- 
+
+  
 # 何が違うのか？
+
 - 0~2πをどのくらい分割するかによって図形が異なることがわかりました。
 
 ```{julia}
@@ -129,7 +133,9 @@ plot(x, y, aspect_ratio=1, lw=2, color=:blue, legend=false, title="N=$N points",
 
 # 分割を3~1000で変化させてみた！
 
-```{julia}
+- とても綺麗だ！みんなで鑑賞したい。
+
+```{{julia}}
 #| code-fold: true
 #| code-summary: "Show the code"
 # GIFアニメーションの作成（フレームレートを設定）
@@ -148,8 +154,6 @@ end fps=10  # フレームレートを10 FPSに設定
 
 ```
 
-- とても綺麗だ！みんなで鑑賞したい。
-
 {{< pagebreak >}}
 
 
@@ -157,7 +161,7 @@ end fps=10  # フレームレートを10 FPSに設定
 
 - 音源は Tinymemory さんの「秋はセンチメンタル」です。
 - iMovieで編集しました。
-- テスト
+- なんか人間の人生のようです。
   
 
  ![](https://shimizudan.github.io/20241027sundaymath/004.png)
@@ -168,12 +172,8 @@ end fps=10  # フレームレートを10 FPSに設定
 
 # 動画鑑賞（約2分）
 
-- なんか人間の人生のようです。
 
-
-
-
- ![](https://youtu.be/5sJvXND0Y80)
+ [https://youtu.be/5sJvXND0Y80](https://youtu.be/5sJvXND0Y80)
 
 
 {{< pagebreak >}}
