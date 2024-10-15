@@ -1,0 +1,177 @@
+---
+title: "パラメータ表示の曲線を鑑賞"
+author: "清水　団　Dan Shimizu ([@dannchu](https://twitter.com/dannchu)) "
+date: "10/27/2024"
+jupyter: julia-1.10
+format:
+  html:
+    toc: true
+    toc-location: right
+---
+
+本日の内容のサイトはこちらです。（QRコード）
+
+![](https://shimizudan.github.io/20240629sundaymath/QR6237.png)
+
+{{< pagebreak >}}
+
+# はじめに（自己紹介）
+
+
+ ![](https://shimizudan.github.io/20241027sundaymath/001.jpeg)
+
+
+{{< pagebreak >}}
+
+
+# @algebraFact さんのXのポスト
+
+ ![](https://shimizudan.github.io/20241027sundaymath/002.png)
+
+ - 綺麗だな。作ってみたいな。
+ - Julia言語で作ってみよう！
+
+{{< pagebreak >}}
+
+
+# Julia言語の紹介
+
+
+ [https://julialang.org](https://julialang.org)
+
+ ![](https://shimizudan.github.io/20240225-2sundaymath/pic24.png)
+
+Juliaは統計処理や科学技術計算、機械学習に強いプログラミング言語といわれています。 例えばStatsBase.jlやDistributions.jlなどのパッケージを使用すると、統計モデリングや仮説検定、回帰分析、時系列分析などの統計処理を行えます。
+
+また，[quarto](https://quarto.org)というパブリッシング・システムを用いてWebページを作成しました。基本`Markdown`で，コードの読み込みも容易です。今回は利用していませんが，新たな数式処理の[typst](https://typst.app)も実装可能です。
+
+
+{{< pagebreak >}}
+
+# Julia言語で作ってみたが。。。
+
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+using Plots
+
+# θの範囲を設定
+θ = LinRange(0, 2π, 1000)
+
+# xとyの定義
+x = cos.(θ) .+ (3 * cos.(99 .* θ)) ./ 7
+y = sin.(θ) .- (3 * sin.(99 .* θ)) ./ 7
+
+# プロット
+plot(x, y, aspect_ratio=1, legend=false, xlabel="x", ylabel="y", title="Parametric Plot")
+
+```
+
+- なんか違う。。。
+
+{{< pagebreak >}}
+
+# 他の人も同じように違っている。
+
+- @matheser さんのXのポスト
+
+ ![](https://shimizudan.github.io/20241027sundaymath/003.png)
+
+- 私の作ったのと同じで，@algebraFact のようにならない。
+- 
+# 何が違うのか？
+- 0~2πをどのくらい分割するかによって図形が異なることがわかりました。
+
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+using Plots
+
+# θの範囲を設定
+θ = LinRange(0, 2π, 113)
+
+# xとyの定義
+x = cos.(θ) .+ (3 * cos.(99 .* θ)) ./ 7
+y = sin.(θ) .- (3 * sin.(99 .* θ)) ./ 7
+
+# プロット
+plot(x, y, aspect_ratio=1, legend=false, xlabel="x", ylabel="y", title="Parametric Plot")
+
+```
+
+
+# 211分割だった！
+
+- @algebraFact のポストはどのくらいの分割だったかというと211分割でした。
+
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+using Plots
+
+# θの分割数を指定（例として211を設定）
+N = 211
+
+# θの範囲を設定
+θ = LinRange(0, 2π, N)
+
+# xとyの定義
+x = cos.(θ) .+ (3 * cos.(99 .* θ)) ./ 7
+y = sin.(θ) .- (3 * sin.(99 .* θ)) ./ 7
+
+# プロット
+plot(x, y, aspect_ratio=1, lw=2, color=:blue, legend=false, title="N=$N points",axis=false,grid=false)
+
+```
+
+
+{{< pagebreak >}}
+
+# 分割を3~1000で変化させてみた！
+
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+# GIFアニメーションの作成（フレームレートを設定）
+using Plots
+@gif for N in 3:1000
+    # θの範囲を設定
+    θ = LinRange(0, 2π, N)
+
+    # xとyの定義
+    x = cos.(θ) .+ (3 * cos.(99 .* θ)) ./ 7
+    y = sin.(θ) .- (3 * sin.(99 .* θ)) ./ 7
+
+    # プロット
+    plot(x, y, aspect_ratio=1, lw=2, color = :cyan, legend=false, axis=false, grid=false, background_color=:black,title="$N",)
+end fps=10  # フレームレートを10 FPSに設定
+
+```
+
+- とても綺麗だ！みんなで鑑賞したい。
+
+{{< pagebreak >}}
+
+
+# 鑑賞用動画を作成
+
+- 音源は Tinymemory さんの「秋はセンチメンタル」です。
+- iMovieで編集しました。
+
+
+ ![](https://shimizudan.github.io/20241027sundaymath/004.png)
+
+
+
+{{< pagebreak >}}
+
+# 動画鑑賞（約2分）
+
+- なんか人間の人生のようです。
+
+
+ ![](https://youtu.be/5sJvXND0Y80)
+
+
+{{< pagebreak >}}
+
