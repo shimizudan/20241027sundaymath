@@ -155,23 +155,12 @@ end fps=10  # フレームレートを10 FPSに設定
 {{< pagebreak >}}
 
 
-# 鑑賞用動画を作成
+# 鑑賞用動画を作成（1分42秒）
 
-- 音源は Tinymemory さんの「秋はセンチメンタル」です。
-- iMovieで編集しました。
-  
-
- ![](https://shimizudan.github.io/20241027sundaymath/004.png){width=70%}
-
-
-
-{{< pagebreak >}}
-
-# 動画鑑賞（1分41秒）
-
+- 音源はGarageBandで作成，iMovieで編集しました。
 - 人生のようです。
 
- [https://youtu.be/5sJvXND0Y80](https://youtu.be/5sJvXND0Y80)
+ [https://youtu.be/t-fJX7kCbc8](https://youtu.be/t-fJX7kCbc8)
 
 
 {{< pagebreak >}}
