@@ -134,9 +134,7 @@ plot(x, y, aspect_ratio=1, lw=2, color=:blue, legend=false, title="N=$N points",
 
 
 
-![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_211.gf){width=50%}
-
-![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_600.gf){width=50%}
+![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_211.gif){width=50%}![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_600.gif){width=50%}
 
 
 {{< pagebreak >}}
