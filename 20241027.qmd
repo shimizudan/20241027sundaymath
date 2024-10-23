@@ -129,6 +129,18 @@ plot(x, y, aspect_ratio=1, lw=2, color=:blue, legend=false, title="N=$N points",
 
 {{< pagebreak >}}
 
+
+# 折れ線の作図の様子
+
+
+
+![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_211.gf){width=50%}
+
+![](https://shimizudan.github.io/20241027sundaymath/parametric_vector_sum_600.gf){width=50%}
+
+
+{{< pagebreak >}}
+
 # 分割を3~1000で変化させてみた！
 
 - とても綺麗だ！みんなで鑑賞したい。
@@ -160,7 +172,7 @@ end fps=10  # フレームレートを10 FPSに設定
 - 音源はGarageBandで作成，iMovieで編集しました。
 - 人生のようです。
 
- [https://youtu.be/t-fJX7kCbc8](https://youtu.be/t-fJX7kCbc8)
+ [https://youtu.be/n7WcdTHRY1A](https://youtu.be/n7WcdTHRY1A)
 
 
 {{< pagebreak >}}
