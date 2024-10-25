@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Animation</title>
+    <title>Interactive Curve Animation</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         body { background-color: black; color: white; display: flex; flex-direction: column; align-items: center; }
@@ -37,16 +37,15 @@
                 line: { color: 'cyan', width: 2 }
             };
             
-            // Define the layout
+            // Define the layout with aspect ratio preserved
             const layout = {
                 title: `N = ${N}`,
                 paper_bgcolor: 'black',
                 plot_bgcolor: 'black',
-                xaxis: { visible: false },
+                xaxis: { visible: false, scaleanchor: "y", scaleratio: 1 },
                 yaxis: { visible: false },
                 margin: { t: 40, b: 0, l: 0, r: 0 },
-                showlegend: false,
-                aspectratio: { x: 1, y: 1 }
+                showlegend: false
             };
             
             // Plot or update the plot
