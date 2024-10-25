@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animation</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { background-color: black; color: white; display: flex; flex-direction: column; align-items: center; }
+        h1 { color: cyan; }
+    </style>
+</head>
+<body>
+    <h1>Interactive Curve Animation</h1>
+    <div id="plot"></div>
+    <label for="slider" style="color: cyan;">Adjust N:</label>
+    <input type="range" id="slider" min="3" max="1000" step="1" value="3">
+
+    <script>
+        // Initial plot setup
+        const plotDiv = document.getElementById('plot');
+        const slider = document.getElementById('slider');
+
+        function plotCurve(N) {
+            // Generate θ range
+            const theta = Array.from({length: N}, (_, i) => (i / (N - 1)) * 2 * Math.PI);
+            
+            // Calculate x and y based on the formula
+            const x = theta.map(t => Math.cos(t) + (3 * Math.cos(99 * t)) / 7);
+            const y = theta.map(t => Math.sin(t) - (3 * Math.sin(99 * t)) / 7);
+            
+            // Define the trace
+            const trace = {
+                x: x,
+                y: y,
+                mode: 'lines',
+                line: { color: 'cyan', width: 2 }
+            };
+            
+            // Define the layout
+            const layout = {
+                title: `N = ${N}`,
+                paper_bgcolor: 'black',
+                plot_bgcolor: 'black',
+                xaxis: { visible: false },
+                yaxis: { visible: false },
+                margin: { t: 40, b: 0, l: 0, r: 0 },
+                showlegend: false,
+                aspectratio: { x: 1, y: 1 }
+            };
+            
+            // Plot or update the plot
+            Plotly.react(plotDiv, [trace], layout);
+        }
+
+        // Initial plot
+        plotCurve(parseInt(slider.value));
+
+        // Update plot on slider change
+        slider.addEventListener('input', (event) => {
+            const N = parseInt(event.target.value);
+            plotCurve(N);
+        });
+    </script>
+</body>
+</html>
